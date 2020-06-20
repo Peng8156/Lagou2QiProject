@@ -3,11 +3,18 @@
 
 a = 1
 
+name = 'tom'
+
 def func():
     a = 2
-    print(f"a = {a}")
+    global name
+    name = 'jerry'
+#    print(f"a = {a}")
+    print(f"func {name}")
+#print(a)
 
-print(a)
-
+print(name)
 func()
+print('调用函数之后的name')
+print(name)
 
